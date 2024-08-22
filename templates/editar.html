@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Filmes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/estilo.css">
+</head>
+
+<body class="pgi">
+
+    <header class="cabeç">
+        <nav>
+            <img src="/static/Black Red White Illustration Clapperboard  Frame  Creative Studio Logo.png" alt="logo">
+
+        </nav>
+
+    </header>
+
+<section class="corpo">
+
+    <p>Edite sua avaliação</p>
+
+    <div>
+        <form action="/editar_filme" method="post">
+
+            <div class="grupo">
+                <label for="nome">Nome do filme:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+
+            <div class="grupo">
+                <label for="pet">Genêro do filme:</label>
+                <input type="text" id="pet" name="pet" required>
+            </div>
+
+            <div class="grupo">
+                <label for="especie">Autor do filme:</label>
+                <input type="text" id="especie" name="especie" required>
+            </div>
+
+            <div class="grupo">
+                <button type="submit">SALVAR</button>
+            </div>
+        </form>
+
+    </div>
+
+</section>

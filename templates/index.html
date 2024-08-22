@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Filmes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/estilo.css">
+</head>
+
+<body class="pgi">
+
+    <header class="cabeç">
+        <nav>
+            <img src="/static/Black Red White Illustration Clapperboard  Frame  Creative Studio Logo.png" alt="logo">
+
+            <div class="itens-menu">
+                <a href="/">Home</a>
+                <a href="adicionar.html">Adicionar filme</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="topo2">
+
+        <img src="/static/Design sem nome.png" alt="fundo">
+
+        <p class="text">Descubra o filme perfeito para o seu próximo 
+            momento: nós assistimos, avaliamos e revelamos!</p>
+
+    </section>
+
+    <section class="topo3">
+
+        <br><br>
+
+        <p class="titu">Encontre Seu Próximo Filme Imperdível</p>
+
+        <ul>
+            {% for filme in filmes %}
+            <li> 
+                <p>{{filme[1]}}</p>
+            </li>
+            {%endfor%}
+        </ul>
+
+        
+
+    </section>
+    
+
+</body>
+</html>
